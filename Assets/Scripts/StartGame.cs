@@ -11,6 +11,7 @@ public class StartGame : MonoBehaviour {
 	
 	public void OnMouseDownStart() {
 		Application.LoadLevel ("clicker");
+		Destroy (this);
 	}
 
 	public void OnMouseDownExit() {
@@ -19,8 +20,10 @@ public class StartGame : MonoBehaviour {
 
 	public void OnMouseDownTitle()
 	{
-		Application.CancelQuit ();
+		//Destroy (gameObject.Find ("Main Camera"));
+		DestroyImmediate(Camera.main.gameObject);
 		Application.LoadLevel ("title");
+
 	}
 
 }
