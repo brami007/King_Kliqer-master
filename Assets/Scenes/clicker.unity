@@ -251,15 +251,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 416520, guid: a2cdbc5b8ae7d4692a3577aca92e8d19, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -.200000003
+      value: -6.09000015
       objectReference: {fileID: 0}
     - target: {fileID: 416520, guid: a2cdbc5b8ae7d4692a3577aca92e8d19, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -.330000013
+      value: -.119999997
       objectReference: {fileID: 0}
     - target: {fileID: 416520, guid: a2cdbc5b8ae7d4692a3577aca92e8d19, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -1
+      value: 88.8700027
       objectReference: {fileID: 0}
     - target: {fileID: 416520, guid: a2cdbc5b8ae7d4692a3577aca92e8d19, type: 2}
       propertyPath: m_LocalRotation.x
@@ -447,11 +447,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22404020, guid: cea5817e356734f17b20f5ee4a610d72, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22496872, guid: cea5817e356734f17b20f5ee4a610d72, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cea5817e356734f17b20f5ee4a610d72, type: 2}
@@ -655,13 +655,14 @@ GameObject:
   - 224: {fileID: 584005344}
   - 222: {fileID: 584005346}
   - 114: {fileID: 584005345}
+  - 95: {fileID: 584005347}
   m_Layer: 5
   m_Name: hatUpgradesPopup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &584005344
 RectTransform:
   m_ObjectHideFlags: 0
@@ -677,7 +678,7 @@ RectTransform:
   m_RootOrder: 7
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: -2.5}
+  m_AnchoredPosition: {x: 0, y: -128}
   m_SizeDelta: {x: 0, y: 245}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &584005345
@@ -707,6 +708,23 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 584005343}
+--- !u!95 &584005347
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 584005343}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 49eb0eb5259ad7b4f94867bab7995edb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 2
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &737637523
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,7 +792,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 737637523}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .00999999978, y: 1.40999997, z: 0}
+  m_LocalPosition: {x: 6.42999983, y: 1.02999997, z: 88.25}
   m_LocalScale: {x: .400000006, y: .400000006, z: 1}
   m_Children:
   - {fileID: 762439466}
@@ -1301,13 +1319,14 @@ GameObject:
   - 224: {fileID: 942097141}
   - 222: {fileID: 942097140}
   - 114: {fileID: 942097139}
+  - 95: {fileID: 942097142}
   m_Layer: 5
   m_Name: foodUpgradesPopup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &942097139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1350,9 +1369,26 @@ RectTransform:
   m_RootOrder: 6
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: -2.5}
+  m_AnchoredPosition: {x: 0, y: -126}
   m_SizeDelta: {x: 0, y: 245}
   m_Pivot: {x: .5, y: .5}
+--- !u!95 &942097142
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 942097138}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 763c71c287342b044a784aa5d85c71f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 2
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &956857534 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 165822, guid: c0ca800e114ba4cd08069899dc8bb662, type: 2}
@@ -1473,11 +1509,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22415962, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22462058, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 446236, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2106,11 +2142,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22478624, guid: c0ca800e114ba4cd08069899dc8bb662, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22464898, guid: c0ca800e114ba4cd08069899dc8bb662, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11435102, guid: c0ca800e114ba4cd08069899dc8bb662, type: 2}
       propertyPath: Affordable.r
@@ -2302,11 +2338,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22489612, guid: 6a5e80c2e86184b7b92dc275f01fb16f, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22433926, guid: 6a5e80c2e86184b7b92dc275f01fb16f, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6a5e80c2e86184b7b92dc275f01fb16f, type: 2}
